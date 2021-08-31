@@ -6,8 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class PruebaSerializacion {
 
-	
-	
+
 	public static void main(String[] args) {
 		
 		//creo u alumno
