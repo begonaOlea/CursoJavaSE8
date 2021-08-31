@@ -12,4 +12,8 @@ public class SavingsAccount extends Account {
     public void accumulateInterest() {
         balance += (balance * interestRate);
     }    
+    
+    public double getInterestRate() {
+		return interestRate;
+	}
 }

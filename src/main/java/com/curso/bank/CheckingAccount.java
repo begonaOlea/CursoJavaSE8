@@ -32,4 +32,8 @@ public class CheckingAccount extends Account {
             balance = balance - amount;
         }
     }
+    
+    public double getOverdraftAmount() {
+		return overdraftAmount;
+	}
 }

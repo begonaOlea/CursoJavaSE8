@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BankMap {
-  private static Map<String,Customer> customers;
+  private static Map<String,CustomerList> customers;
 
   static {
-    customers = new HashMap<String, Customer>();
+    customers = new HashMap<String, CustomerList>();
   }
 
   private BankMap() {
@@ -15,10 +15,10 @@ public class BankMap {
   }
 
   public static void addCustomer(String f, String l, String dni) {
-	  customers.put(dni, new Customer(f, l));  
+	  customers.put(dni, new CustomerList(f, l));  
   }
   
-  public static void addCustomer(Customer c, String dni) {
+  public static void addCustomer(CustomerList c, String dni) {
 	  customers.put(dni, c);  
   }
   
@@ -27,7 +27,7 @@ public class BankMap {
     return customers.size();
   }
   
-  public static Customer getCustomer(String dni) {
+  public static CustomerList getCustomer(String dni) {
     return customers.get(dni);
   }
 }
