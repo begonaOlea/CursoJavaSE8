@@ -1,7 +1,9 @@
 package com.curso.bank;
 
+
 public class Account {
-    
+	
+    private int id;
     protected double balance;
     
     protected Account(double initBalance) {
